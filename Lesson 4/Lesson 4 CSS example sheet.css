@@ -1,0 +1,8 @@
+.text-cls{
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-weight: bold;*/
+}
+.hyperlink-cls{
+    color:red;
+    text-decoration: none;
+}
