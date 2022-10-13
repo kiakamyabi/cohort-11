@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#banner-div{
+    background-image:url("banner.jpg");
+    background-size: 100% 80vh;
+    background-repeat: no-repeat;
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:160px 0 160px 0;
+
+}
+.aux-text-cls{
+    text-align: center;
+}
+#bottom-title-id{
+    margin:130px;
+}
+.aux-text-cls p{
+    margin:110px;
+}
+
+#banner-id{
+    font-size: 130px;
+    text-align: center;
+    margin:0;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin:20px 0 130px 0;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:inherit;
+}
+
+
+/* Grid */
+#grid-id{
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    margin:40px 120px;
+    align-items:center;
+    justify-items: center;
+}
+#horntail-id{
+    grid-column:1;
+    grid-row: 1;
+}
+#paragraph1-id{
+    grid-column: 3/3;
+    grid-row: 1;
+}
+#paragraph2-id{
+    grid-column: 1;
+    grid-row:2;
+}
+#willow-id{
+    grid-column: 3;
+    grid-row: 2;
+}
+#fight-id{
+    grid-column: 1;
+    grid-row:3;
+}
+#paragraph3-id{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
