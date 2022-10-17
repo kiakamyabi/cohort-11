@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  
+  .top, .bottom{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .middle{
+    flex-basis:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #one{
+    height: 50px;
+    width:50px;
+  }
+  #two{
+    height: 70px;
+    width: 70px;
+  }
+  #three{
+    height: 100px;
+    width: 100px;
+  }
+  #four{
+    height: 120px;
+    width: 120px;
+  }
+  #five{
+    height: 150px;
+    width: 150px;
+  }
+  #one, #two, #three, #four, #five{
+    border:2px solid black;
+  }
