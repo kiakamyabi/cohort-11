@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+body{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/*Icons on the left*/
+#icon-container{
+    width: 10vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    gap: 30px;
+}
+
+/*Top Bar*/
+#topbar-container{
+    display: grid;
+    grid-template-columns:3fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 1;
+}
+#logo-top{
+    grid-column: 1/1;
+    padding-top: 50px;
+    padding-left:60px;
+}
+#home-top{
+    grid-column: 2/2;
+}
+#about-top{
+    grid-column: 3/3;
+}
+#collections-top{
+    grid-column: 4/4;
+}
+#category-top{
+    grid-column: 5/5;
+}
+#home-top, #about-top, #collections-top, #category-top{
+    justify-self: center;
+    align-self: center;
+} 
+#cart-top{
+    grid-column: 6/6;
+    justify-self: right;
+    align-self: center;
+    padding-top: 10px;
+    padding-right:20px;
+}
+/*Middle of page content*/
+#middle-pack{
+    display: flex;
+}
+#middle-container{
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 330px;
+    line-height: 60px;
+}
+#sentence1{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,91,238,1) 0%, rgba(166,9,176,1) 100%);
+    border-radius:9px;
+    color:white;
+    text-align: center;
+    width:250px;
+    height:54px;
+}
+#sentence2{
+    font-weight: 700;
+}
+/*Image of woman on bottom right*/
+#big-girl{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    height: 830px;
+    width: 830px;
+}
+#arrows{
+    padding-top: 40px;
+    /* display:flex;
+    justify-content: space-evenly; */
+}
+#backarrow{
+    padding-left:90px;
+    padding-right: 50px;
+}
