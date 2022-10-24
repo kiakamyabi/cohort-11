@@ -81,8 +81,10 @@ body{
     position: fixed;
     bottom: 0px;
     right: 0px;
-    height: 830px;
-    width: 830px;
+    height: 85%;
+    width: 53%; 
+    /* height: 830px;
+    width: 830px; */
 }
 #arrows{
     padding-top: 40px;
