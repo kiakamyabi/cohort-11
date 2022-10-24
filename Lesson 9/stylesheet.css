@@ -1,0 +1,28 @@
+* {
+    margin:none;
+    padding:none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:white;
+    background-color: #121212;
+}
+.container{
+    border: solid 2px white;
+    border-radius: 15px;
+    width: 30%;
+    /* margin:auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#cal-btn{
+    color:black;
+    background:white;
+    border-radius: 4px;
+    border:none;
+    text-transform: uppercase;
+    height:30px;
+    width:130px;
+}
