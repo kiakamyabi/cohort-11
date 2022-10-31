@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+}
+.text-cls{
+    color:white;
+    text-align: center;
+}
+#swansea-id, #violence-id{
+    color:red;
+    text-decoration: none;
+}
+#bathspa-id, #diplomacy-id{
+    color:green;
+    text-decoration: none;
+}
