@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <p class="text-cls">This is a tutorial.</p>
+    <p class="text-cls" id="player-health">Player Health: </p>
+    <p class="text-cls" id="enemy-health">Enemy Health: </p>
+    <!--Dropdown for Offense Moves-->
+    <label for="offense">Pick an offense move ></label>
+    <select name="offense" id="offense-dropdown">
+    <option value="fireball">Fireball</option>
+    <option value="heal">Heal</option>
+    </select><br><br>
+    <!--Dropdown for Targetting-->
+    <label for="target">Pick a target ></label>
+    <select name="target" id="target-dropdown">
+    <option value="enemy">Enemy</option>
+    <option value="player">Player</option>
+    </select><br><br>
+    <button onclick="confirmF()">Confirm Moves</button>
+    
+</body>
+</html>
