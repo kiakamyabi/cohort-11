@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10</title>
+​
+    <style>
+        .form-container {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+​
+        form#booking-form {
+            width:600px;
+        }
+        form .form-row {
+            margin-bottom: 1rem;
+        }
+        #other-text{
+            display: none;
+        }
+​
+    </style>
+</head>
+<body>
+​
+    
+​
+    <!--
+        Name    -- text
+        Date   -- date
+        Number of people    -- select (up to 10 then contact restaurant)
+        Tel         -- tel
+        Allergies       -- checkbox / other splease specify
+        Vegan?      -- checkbox
+        inside / outside  -- radio
+        Other comments -- textarea
+    -->
+​
+    <div class="form-container">
+​
+        <form action="" id="booking-form">
+            <h1>Booking form</h1>
+            <!-- name -->
+            <div class="form-row">
+                <label for="name">Your name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <!-- Date -->
+            <div class="form-row">
+                <label for="start">When would you like to book?</label>
+                <input 
+                    type="date" 
+                    id="booking-date" 
+                    name="booking-date"
+                >  
+            </div>
+             <!-- number of people -->
+             <div class="form-row">
+                <label for="numberOfPpl">How many people:</label>
+                <select name="numberOfPpl" id="numberOfPpl">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="0">Group larger than 10</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-row">
+                <p>Please select which allergies you have.</p>
+                <label for="nut-allergy">Nut Allergy</label>
+                <input type="checkbox" value="nut-allergy" id="nut-allergy" name="allergy" class="allergy">
+                <label for="react-allergy">React Allergy</label>
+                <input type="checkbox" value="react-allergy" id="react-allergy" name="allergy" class="allergy">
+                <label for="lactose-intolerance">Lactose Intolerance</label>
+                <input type="checkbox" value="lactose-intolerance" id="lactose-intolerance" name="allergy" class="allergy">
+                <label for="other">Other</label>
+                <input type="checkbox" value="other" id="other" name="allergy" class="allergy">
+                <input id='other-text' placeholder='Please specify.' type='text'>
+
+            </div>
+            <div class="form-row">
+                <label for="vegan">Are you vegan?</label>
+                <input type="checkbox" value="vegan" id="vegan" name="vegan" class="vegan-cls">
+            </div>
+            <div class="form-row">
+                <p>Where would you like to dine?</p>
+                <input type="radio" id="inside" name="dine-location" value="inside">
+                <label for="inside">Inside</label>
+                <input type="radio" id="outside" name="dine-location" value="outside">
+                <label for="outside">Outside</label>
+            </div>
+            <div class="form-row">
+                <textarea id="other-comments" name="other-comments" rows="3" cols="50" placeholder="Please type here anything else you would like us to know."></textarea>
+            </div>
+​
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+​
+    <script>
+        /* use a function for the exact format desired... */
+        const d = new Date();
+        const dateInput = document.getElementById('booking-date');
+        const todayDate =  d.toISOString().substring(0,10);
+        dateInput.value = todayDate;
+        dateInput.min = todayDate;
+        dateInput.max = d.setMonth(d.getMonth() + 1);
+        console.log(dateInput.value);
+​
+    </script>
+​
+​
+    
+</body>
+</html>
